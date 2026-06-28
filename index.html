@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cijfer Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cijfer Calculator</h1>
+
+    <div class="form">
+
+      <label>% voor een 6</label>
+      <input type="number" id="percentSix">
+
+      <label>N-term</label>
+      <input type="number" id="nTerm">
+
+      <label>Type toets</label>
+      <select id="typeTest">
+        <option value="6">Voor een 6</option>
+        <option value="pass">Voor voldoende</option>
+      </select>
+
+      <label>Max aantal cijfers</label>
+      <input type="number" id="maxGrades">
+
+      <label>Gehaalde cijfers</label>
+      <input type="number" id="passedGrades">
+
+      <button onclick="calculate()">Bereken</button>
+
+    </div>
+
+    <div class="output">
+      <h2>Resultaat</h2>
+      <p id="result">—</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
